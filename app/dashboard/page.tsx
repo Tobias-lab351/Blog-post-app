@@ -27,7 +27,7 @@ export default async function DashboardRoute() {
     return <p>You must be logged in to view this page.</p>;
   }
 
-  const data = await getData(user.id);
+  const data = await getData(user?.id);
 
   return (
     <div>
